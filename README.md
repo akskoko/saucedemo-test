@@ -23,3 +23,5 @@ or
 ```bash
 npm run cy:run
 ```
+
+5. Report of automation test → cypress/reports & cypress/videos
