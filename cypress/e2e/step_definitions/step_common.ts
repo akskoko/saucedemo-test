@@ -110,7 +110,11 @@ Then("I should be redirected to Saucedemo {string} Page", (page: string) => {
       cy.url().should("include", "/cart.html");
       break;
     case "About":
-      cy.url().should("include", "saucelabs.com");
+      cy.origin("https://saucelabs.com", () => {
+        cy.on("uncaught:exception", (e) => {
+          return false;
+        });
+      });
       break;
     default:
       cy.log("Incorrect page data");

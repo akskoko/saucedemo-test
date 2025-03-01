@@ -7,7 +7,7 @@ const addToCartPage = {
     btnRemoveBikeLightFromCart: '//button[contains(text(),"Remove") and @data-test="remove-sauce-labs-bike-light"]',
     btnCart: '//a[@data-test="shopping-cart-link"]',
     btnContinueShopping: '//button[contains(text(),"Continue Shopping")]',
-    txtUpdatedCart: '//span[@data-test="shopping-cart-badge"]',
+    txtUpdatedCart: '//span[@data-test="shopping-cart-badge"]'
   };
   
   export default addToCartPage;
